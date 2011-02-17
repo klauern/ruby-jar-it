@@ -66,12 +66,9 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>com.alliantenergy.emo.rubyjaritup.App</mainClass>
+                            <mainClass>klauer.rubyjarit.App</mainClass>
                         </manifest>
                     </archive>
-                    <descriptorRefs>
-                        <descriptorRef>jar-with-dependencies</descriptorRef>
-                    </descriptorRefs>
                     <descriptors>  
                         <descriptor>src/main/assembly/gem.xml</descriptor>
                     </descriptors>                    
