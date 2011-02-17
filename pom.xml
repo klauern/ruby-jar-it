@@ -44,7 +44,7 @@
     <build>
         <resources>
             <resource>
-                <directory>${project.build.directory}/rubygems</directory>
+                <directory>${project.build.directory}/rubygems/cache</directory>
             </resource>
         </resources>
         <plugins>
@@ -72,13 +72,9 @@
                     <descriptorRefs>
                         <descriptorRef>jar-with-dependencies</descriptorRef>
                     </descriptorRefs>
-                    <dependencySets>
-                        <dependencySet>
-                            <excludes>
-                                <exclude>*:gem:*</exclude>
-                            </excludes>
-                        </dependencySet>
-                    </dependencySets>
+                    <descriptors>  
+                        <descriptor>src/main/assembly/gem.xml</descriptor>
+                    </descriptors>                    
                 </configuration>
                 <executions>
                     <execution>
